@@ -1,0 +1,40 @@
+## 二、手动配置
+
+从[官网](https://lbs.qq.com/ios_v1/download_3d.html)下载最新版本后
+
+这里我们提供XCode的腾讯地图SDK工程配置方法。
+
+### 1.添加framework
+
+开发者需在[腾讯地图 iOS SDK官网](https://lbs.qq.com/ios_v1/download_3d.html)下载sdk资源包，解压后在sdk文件夹中找到QMapKit.framework文件，然后在工程界面选中  **library文件夹**  右键弹出菜单中选择"Add Files To..."，从**文件夹sdk** 中将文件QMapKit.framework添加到工程中，在弹出窗口中勾选"Copy items into destination group's folder(if needed)" 。
+
+![](https://upload.cc/i1/2019/05/22/O7EITu.png)
+
+### 2.添加资源文件
+
+在工程界面右键弹出菜单中选择"Add Files To..."，从文件夹sdk（同步骤1）->QMapKit.framework中将资源文件QMapKit.bundle添加到工程中，在弹出窗口中勾选"Copy items into destination group's folder(if needed)" 。
+
+![](https://upload.cc/i1/2019/04/08/FPp6n2.png)
+
+添加需要的编译选项：在TARGETS-Build Settings-Other Linker Flags 中添加如下内容： -ObjC 。其中，**O**和**C**大写。
+
+![](https://upload.cc/i1/2019/04/08/RgWzvH.png)
+
+
+
+地图SDK依赖以下库： libsqlite3.tbd、libc++.tbd、QMapKit.framework。
+
+最终链接库配置如下：
+
+![](https://upload.cc/i1/2019/04/08/DiqWRu.png)
+
+
+
+3.注意事项：
+
+如果没有正确添加资源文件，则有可能出现地图加载不成功现象，如下图：
+
+![](https://upload.cc/i1/2019/04/30/oMq3Ef.png)
+
+
+
