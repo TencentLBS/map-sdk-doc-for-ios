@@ -22,8 +22,8 @@ Echo "Execute commands: commit-m'deploy'"
 git commit -m 'deploy'
 
 # If published to https://<USERNAME>.github.io/<REPO>
-Echo: "Execute commands: git push-f https://github.com/yulilong/book.git master:gh-pages"
-git push https://github.com/TencentLBS/map-sdk-doc-for-iOS.git master:gh-pages
+Echo: "Execute commands: git push https://github.com/TencentLBS/map-sdk-doc-for-ios.git master:gh-pages"
+git push https://github.com/TencentLBS/map-sdk-doc-for-ios.git master:gh-pages
 
 # Return to the last working directory
 Echo "Back to the working directory just now"
