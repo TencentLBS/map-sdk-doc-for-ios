@@ -1,0 +1,1002 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>小车平移滑动动画 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="utils-cluster.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../intro/intro.md">
+            
+                <span>
+            
+                    
+                    接入指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../intro/intro-regKey.html">
+            
+                <a href="../intro/intro-regKey.html">
+            
+                    
+                    申请开发密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../intro/intro-auto.html">
+            
+                <a href="../intro/intro-auto.html">
+            
+                    
+                    自动部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../intro/intro-manual.html">
+            
+                <a href="../intro/intro-manual.html">
+            
+                    
+                    手动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../intro/intro-useKey.html">
+            
+                <a href="../intro/intro-useKey.html">
+            
+                    
+                    设置开发密钥
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    显示地图
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basicMap/basicMap-show.html">
+            
+                <a href="../basicMap/basicMap-show.html">
+            
+                    
+                    显示基础地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basicMap/basicMap-type.html">
+            
+                <a href="../basicMap/basicMap-type.html">
+            
+                    
+                    设置地图类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basicMap/basicMap-indoor.html">
+            
+                <a href="../basicMap/basicMap-indoor.html">
+            
+                    
+                    室内地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basicMap/basicMap-style.html">
+            
+                <a href="../basicMap/basicMap-style.html">
+            
+                    
+                    个性化地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basicMap/basicMap-building.html">
+            
+                <a href="../basicMap/basicMap-building.html">
+            
+                    
+                    显示建筑物
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basicMap/basicMap-oversea.html">
+            
+                <a href="../basicMap/basicMap-oversea.html">
+            
+                    
+                    海外图展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basicMap/offline.html">
+            
+                <a href="../basicMap/offline.html">
+            
+                    
+                    离线地图
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    地图控件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../mapUI/mapUI-config.html">
+            
+                <a href="../mapUI/mapUI-config.html">
+            
+                    
+                    基础控件设置    
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    地图视野控制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../camera/camera-basic.html">
+            
+                <a href="../camera/camera-basic.html">
+            
+                    
+                    基础视野操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../camera/camera-rect.html">
+            
+                <a href="../camera/camera-rect.html">
+            
+                    
+                    视野范围设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../camera/camera-limit.html">
+            
+                <a href="../camera/camera-limit.html">
+            
+                    
+                    限制显示区域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    覆盖物
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../overlay/overlay-annotation.html">
+            
+                <a href="../overlay/overlay-annotation.html">
+            
+                    
+                    绘制点标记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../overlay/overlay-polyline.html">
+            
+                <a href="../overlay/overlay-polyline.html">
+            
+                    
+                    绘制线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../overlay/overlay-polygon.html">
+            
+                <a href="../overlay/overlay-polygon.html">
+            
+                    
+                    绘制面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../overlay/overlay-tile.html">
+            
+                <a href="../overlay/overlay-tile.html">
+            
+                    
+                    自定义瓦片图层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../overlay/overlay-heat.html">
+            
+                <a href="../overlay/overlay-heat.html">
+            
+                    
+                    热力图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../overlay/overlay-heat-vector.html">
+            
+                <a href="../overlay/overlay-heat-vector.html">
+            
+                    
+                    蜂窝热力图
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../overlay/overlay-zindex.html">
+            
+                <a href="../overlay/overlay-zindex.html">
+            
+                    
+                    元素压盖顺序介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../overlay/overlay-custom-layer.html">
+            
+                <a href="../overlay/overlay-custom-layer.html">
+            
+                    
+                    个性化图层
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../overlay/overlay-opengl.html">
+            
+                <a href="../overlay/overlay-opengl.html">
+            
+                    
+                    OpenGL绘制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../overlay/overlay-groundOverlay.html">
+            
+                <a href="../overlay/overlay-groundOverlay.html">
+            
+                    
+                    GroundOverlay
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    地理信息检索
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../search/search.html">
+            
+                <a href="../search/search.html">
+            
+                    
+                    检索功能概述及接入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../search/search-location.html">
+            
+                <a href="../search/search-location.html">
+            
+                    
+                    地点搜索
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../search/search-suggestion.html">
+            
+                <a href="../search/search-suggestion.html">
+            
+                    
+                    关键词输入提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../search/search-district.html">
+            
+                <a href="../search/search-district.html">
+            
+                    
+                    行政区划    
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../search/search-geo.html">
+            
+                <a href="../search/search-geo.html">
+            
+                    
+                    地址解析(地址转坐标)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="../search/search-regeo.html">
+            
+                <a href="../search/search-regeo.html">
+            
+                    
+                    逆地址解析(坐标位置描述)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="../search/search-route.html">
+            
+                <a href="../search/search-route.html">
+            
+                    
+                    路线规划服务    
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    地图手势
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../gesture/gesture.html">
+            
+                <a href="../gesture/gesture.html">
+            
+                    
+                    基础手势
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../gesture/gesture-callback.html">
+            
+                <a href="../gesture/gesture-callback.html">
+            
+                    
+                    手势回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../gesture/gesture-custom.html">
+            
+                <a href="../gesture/gesture-custom.html">
+            
+                    
+                    自定义手势
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    地图组件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="utils.html">
+            
+                <a href="utils.html">
+            
+                    
+                    地图组件接入指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="utils-cluster.html">
+            
+                <a href="utils-cluster.html">
+            
+                    
+                    点聚合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.3" data-path="utils-smooth.html">
+            
+                <a href="utils-smooth.html">
+            
+                    
+                    小车平移滑动动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    显示定位
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../location/location.html">
+            
+                <a href="../location/location.html">
+            
+                    
+                    定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    地图工具
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../other/other-snapshot.html">
+            
+                <a href="../other/other-snapshot.html">
+            
+                    
+                    地图截屏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../other/other-distance.html">
+            
+                <a href="../other/other-distance.html">
+            
+                    
+                    距离计算
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../other/other-transfer.html">
+            
+                <a href="../other/other-transfer.html">
+            
+                    
+                    坐标转换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >小车平移滑动动画</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x5C0F;&#x8F66;&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x7EC4;&#x4EF6;">&#x5C0F;&#x8F66;&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x7EC4;&#x4EF6;</h2>
+<h3 id="&#x7B80;&#x4ECB;">&#x7B80;&#x4ECB;</h3>
+<p>&#x5728;&#x4F7F;&#x7528;LBS&#x670D;&#x52A1;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x884C;&#x4E1A;&#x573A;&#x666F;&#x90FD;&#x9700;&#x8981;&#x5730;&#x56FE;SDK&#x5177;&#x5907;&#x8FDE;&#x7EED;&#x6027;&#x7684;&#x8F68;&#x8FF9;&#x5C55;&#x793A;&#x80FD;&#x529B;&#x3002;&#x4F8B;&#x5982;&#x51FA;&#x884C;&#x3001;&#x8FD0;&#x52A8;&#x3001;&#x7269;&#x6D41;&#x3001;&#x751F;&#x6D3B;&#x670D;&#x52A1;&#x7B49;&#x7C7B;&#x522B;&#x7684;App&#x4E2D;&#x5E38;&#x5E38;&#x9700;&#x8981;&#x5C55;&#x793A;&#x8F66;&#x8F86;&#x6216;&#x7528;&#x6237;&#x7684;&#x884C;&#x7A0B;&#x8F68;&#x8FF9;&#x3001;&#x5B9E;&#x65F6;&#x79FB;&#x52A8;&#x7684;&#x4F4D;&#x7F6E;&#x6570;&#x636E;&#x3002;&#x5F00;&#x53D1;&#x8005;&#x5C55;&#x793A;&#x8F68;&#x8FF9;&#x7684;&#x6838;&#x5FC3;&#x8BC9;&#x6C42;&#x662F;&#x5BF9;&#x771F;&#x5B9E;&#x573A;&#x666F;&#x7684;&#x6A21;&#x62DF;&#xFF0C;&#x5373;&#x5B9E;&#x73B0;&#x8F68;&#x8FF9;&#x7684;&#x5E73;&#x6ED1;&#x5C55;&#x793A;&#x4EE5;&#x53CA;&#x5173;&#x6CE8;&#x76EE;&#x6807;&#x5728;&#x8F68;&#x8FF9;&#x6CBF;&#x7EBF;&#x7684;&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x3001;&#x671D;&#x5411;&#x6539;&#x53D8;&#x3002;</p>
+<p><br></p>
+<h3 id="&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x7C7B;&#x4ECB;&#x7ECD;">&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x7C7B;&#x4ECB;&#x7ECD;</h3>
+<p><hr>
+&#x5C0F;&#x8F66;&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x529F;&#x80FD;&#x4E3B;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;&#x5730;&#x56FE;&#x7EC4;&#x4EF6;&#x4E2D;&#x7684; QMUAnnotationAnimator &#x7C7B;&#x548C; &lt;QMULocation&gt; &#x534F;&#x8BAE;&#x3002;</p>
+<h4 id="qmulocation&#x534F;&#x8BAE;">&lt;QMULocation&gt;&#x534F;&#x8BAE;</h4>
+<p>&#x5C0F;&#x8F66;&#x5728;&#x6298;&#x7EBF;&#x6BB5;&#x4E2D;&#x79FB;&#x52A8;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x63D0;&#x4F9B;&#x6784;&#x5EFA;&#x8BE5;&#x6298;&#x7EBF;&#x7684;&#x5750;&#x6807;&#x96C6;&#x5408;&#xFF0C;&#x6BCF;&#x4E2A;&#x96C6;&#x5408;&#x90FD;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x73B0;&#x4E86; &lt;QMULocation&gt; &#x534F;&#x8BAE;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x7C7B;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x7C7B;&#x793A;&#x4F8B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>@interface CarLocation : NSObject &lt;QMULocation&gt;
+
+// &#x5750;&#x6807;&#x4FE1;&#x606F;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+
+@end
+</code></pre><h4 id="qmuannotationanimator&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x52A8;&#x753B;&#x7C7B;">QMUAnnotationAnimator&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x52A8;&#x753B;&#x7C7B;</h4>
+<p>&#x8BE5;&#x7C7B;&#x63D0;&#x4F9B;&#x4E86;&#x5E73;&#x79FB;&#x52A8;&#x753B;&#x7684;&#x63A7;&#x5236;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x6CD5;&#x4ECB;&#x7ECD;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>/**
+ * @brief  &#x6267;&#x884C;&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x52A8;&#x753B;. &#x8BE5;&#x65B9;&#x6CD5;&#x652F;&#x4EC5;&#x6301;&#x5730;&#x56FE;&#x5728;2D&#x6B63;&#x5317;&#x72B6;&#x6001;&#x4E0B;&#x8FDB;&#x884C;.
+ * @param annotationView  &#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x7684;&#x5BF9;&#x8C61;
+ * @param locations       &#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x7684;&#x7ECF;&#x7EAC;&#x5EA6;&#x5750;&#x6807;&#x70B9;&#x4E32;
+ * @param duration        &#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x65F6;&#x95F4;
+ * @param needRotate      &#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x8FC7;&#x7A0B;&#x4E2D;annotationView&#x662F;&#x5426;&#x9700;&#x8981;&#x6CBF;&#x79FB;&#x52A8;&#x65B9;&#x5411;&#x6267;&#x884C;&#x65CB;&#x8F6C;&#x52A8;&#x753B;
+ */
++ (void)translateWithAnnotationView:(QAnnotationView *)annotationView
+                          locations:(NSArray&lt;id &lt;QMULocation&gt; &gt; *)locations
+                           duration:(CFTimeInterval)duration
+                      rotateEnabled:(BOOL)needRotate;
+</code></pre><p>&#x8BE5;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x7684;locations&#x53C2;&#x6570;&#xFF0C;&#x4E3A;&#x5B9E;&#x73B0;&#x4E86; &lt;QMULocation&gt; &#x534F;&#x8BAE;&#x7684;&#x4F4D;&#x7F6E;&#x4FE1;&#x606F;&#x6570;&#x636E;&#x5BF9;&#x8C61;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x5982;&#x679C;<code>needRotate = YES</code>, &#x5F53;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;annotationView &#x4F1A;&#x6CBF;&#x7740;&#x6307;&#x5B9A;&#x7684;&#x5750;&#x6807;&#x96C6;&#x5408;&#x6784;&#x5EFA;&#x7684;&#x6298;&#x7EBF;&#x79FB;&#x52A8;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;&#x8BE5;&#x65B9;&#x6CD5;&#x652F;&#x4EC5;&#x6301;&#x5730;&#x56FE;&#x5728;2D&#x6B63;&#x5317;&#x72B6;&#x6001;&#x4E0B;&#x8FDB;&#x884C;&#xFF0C;&#x6682;&#x65F6;&#x4E0D;&#x652F;&#x6301;&#x5728;&#x5730;&#x56FE;&#x65CB;&#x8F6C;&#x3001;&#x503E;&#x659C;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x8FDB;&#x884C;&#x3002;</strong></p>
+<p><br></p>
+<h3 id="&#x4F7F;&#x7528;&#x8BF4;&#x660E;">&#x4F7F;&#x7528;&#x8BF4;&#x660E;</h3>
+<p><hr></p>
+<ol>
+<li><p>&#x5E73;&#x6ED1;&#x79FB;&#x52A8;&#x7EC4;&#x4EF6;&#x652F;&#x6301;&#x4F20;&#x5165;&#x5730;&#x56FE;SDK&#x7684;QAnnotationView&#x6216;&#x5176;&#x5B50;&#x7C7B;&#xFF0C;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x7ECF;&#x7EAC;&#x5EA6;&#x5750;&#x6807;&#x70B9;&#x4E32;&#x548C;&#x79FB;&#x52A8;&#x65F6;&#x95F4;&#xFF0C;&#x4F7F;&#x5F97;&#x8BE5;View&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x70B9;&#x4E32;&#x8DEF;&#x7EBF;&#x8FDB;&#x884C;&#x5E73;&#x6ED1;&#x52A8;&#x753B;&#x79FB;&#x52A8;&#x3002;</p>
+</li>
+<li><p>&#x82E5;&#x8BBE;&#x7F6E;needRotate&#x4E3A;YES&#xFF0C;&#x5219;&#x5728;&#x79FB;&#x52A8;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;View&#x81EA;&#x8EAB;&#x7684;&#x65B9;&#x5411;&#x4E5F;&#x4F1A;&#x6839;&#x636E;&#x8DEF;&#x7EBF;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x4F7F;&#x5F97;View&#x7684;&#x4E0A;&#x90E8;&#x4E0E;&#x79FB;&#x52A8;&#x65B9;&#x5411;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#x3002;</p>
+</li>
+<li><p>&#x82E5;&#x9700;&#x8981;&#x5728;&#x52A8;&#x753B;&#x8FC7;&#x7A0B;&#x4E2D;&#x505C;&#x6B62;&#x52A8;&#x753B;&#xFF0C;&#x53EF;&#x8C03;&#x7528;View&#x7684;layer&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+</ol>
+<h4 id="&#x793A;&#x4F8B;&#x5C55;&#x793A;">&#x793A;&#x4F8B;&#x5C55;&#x793A;</h4>
+<p><img src="../images/utils-car.gif" width="60%"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="utils-cluster.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 点聚合">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"小车平移滑动动画","level":"1.9.3","depth":2,"next":{"title":"显示定位","level":"1.10","depth":1,"ref":"","articles":[{"title":"定位","level":"1.10.1","depth":2,"path":"location/location.md","ref":"location/location.md","articles":[]}]},"previous":{"title":"点聚合","level":"1.9.2","depth":2,"path":"utils/utils-cluster.md","ref":"utils/utils-cluster.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"utils/utils-smooth.md","mtime":"2020-05-15T03:13:07.916Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-05T03:38:20.572Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
