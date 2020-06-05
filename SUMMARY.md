@@ -9,12 +9,13 @@
     * [设置开发密钥](intro/intro-useKey.md)
     
 * 显示地图
-    * [显示基础地图](basicMap/basicMap-show.md)
-    * [设置地图类型](basicMap/basicMap-type.md)
-    * [室内地图](basicMap/basicMap-indoor.md)
-    * [个性化地图](basicMap/basicMap-style.md)
-    * [显示建筑物](basicMap/basicMap-building.md)
-    * [海外图展示](basicMap/basicMap-oversea.md)
+	* [显示基础地图](basicMap/basicMap-show.md)
+	* [设置地图类型](basicMap/basicMap-type.md)
+	* [室内地图](basicMap/basicMap-indoor.md)
+	* [个性化地图](basicMap/basicMap-style.md)
+	* [显示建筑物](basicMap/basicMap-building.md)
+	* [海外图展示](basicMap/basicMap-oversea.md)
+	* [离线地图](basicMap/offline.md)
     
 * 地图控件
 	* [基础控件设置	](mapUI/mapUI-config.md)
@@ -30,8 +31,11 @@
 	* [绘制面](overlay/overlay-polygon.md)
 	* [自定义瓦片图层](overlay/overlay-tile.md)
 	* [热力图](overlay/overlay-heat.md)
+	* [蜂窝热力图](overlay/overlay-heat-vector.md)
 	* [元素压盖顺序介绍](overlay/overlay-zindex.md)
 	* [个性化图层](overlay/overlay-custom-layer.md)
+	* [OpenGL绘制](overlay/overlay-opengl.md)
+	* [GroundOverlay](overlay/overlay-groundOverlay.md)
 
 * 地理信息检索
 	* [检索功能概述及接入](search/search.md)
@@ -59,4 +63,3 @@
 	* [地图截屏](other/other-snapshot.md)
 	* [距离计算](other/other-distance.md)
 	* [坐标转换](other/other-transfer.md)
-	

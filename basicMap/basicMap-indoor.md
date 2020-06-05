@@ -250,3 +250,17 @@ POI点击回调
 }
 ```
 
+### 9. 室内地图蒙层
+
+地图SDK在4.3.5版本中新增了室内地图蒙层功能，通过一个简单的接口即可在显示室内地图的同时，将室内地图的周边地图覆盖一层自定义颜色的蒙层。
+
+当开启了室内图功能时，通过下例代码可以为室内图周边设置蒙层：
+
+```objc
+// 设置显示室内图时的蒙层颜色，alpha=0时不显示，默认不显示
+[self.mapView setIndoorMaskColor:[UIColor colorWithRed:0 green:0 blue:1 alpha:0.3]];
+```
+
+效果图如下：
+
+<img src="../images/indoor-mask.png" width="300px">

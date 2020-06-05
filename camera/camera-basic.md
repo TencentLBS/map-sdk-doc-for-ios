@@ -120,3 +120,11 @@ CLLocationCoordinate2D centerCoordinate = self.mapView.centerCoordinate;
 ```objC
 [self.mapView setOverlooking:30 animated:YES];
 ```
+
+<br>
+
+### 常见问题
+<hr>
+1. 地图在缩放时默认是以地图的中心点，如何改为以点击的坐标为中心点进行缩放？
+
+	> 地图在缩放时，默认是以地图中心点为准进行缩放。在SDK 4.3.4在mapView中提供了新的属性`BOOL keepCenterDuringZoom`，该属性默认为YES。设置为NO表示缩放以点击的坐标中心点为准进行缩放。

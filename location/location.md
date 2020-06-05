@@ -125,3 +125,24 @@ presentation.circleFillColor = [[UIColor grayColor] colorWithAlphaComponent:0.3]
 示例图如下：
 
 <img src="../images/location-style.png" width="60%"/>
+
+### 定位图标回调
+<hr>
+
+地图SDK在4.3.5版本增加了点击定位图标调用回调方法的功能，基本使用步骤如下：
+
+1. 设置mapView的代理对象:
+
+	```objc
+	self.mapView.delegate = self;
+	```
+
+2. 实现点击定位图标的代理方法:
+
+	```objc
+	- (void)mapView:(QMapView *)mapView didTapMyLocation:(CLLocationCoordinate2D)location {
+	    NSLog(@"my location is: (%f, %f)", location.latitude, location.longitude);
+	}
+	```
+	
+当点击定位图标时，会调用上述方法，并将当前用户定位的坐标传入该方法中。
